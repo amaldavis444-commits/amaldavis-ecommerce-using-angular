@@ -1,0 +1,41 @@
+<div class="card-wrapper">
+  <div class="card">
+    <div class="product-imgs">
+      <img
+        src="{{product.image}}"
+        alt="shoe image"
+        class="main-product-img">
+    </div>
+
+
+    <div class="product-content">
+
+      <h2 class="product-title">{{product.title}}</h2>
+
+      <div class="product-rating">
+        <h3> rating {{product.rating.rate}}  and  reviews {{product.rating.count}} </h3>
+      </div>
+
+      <div class="product-price">
+        <p class="new-price">${{product.price}}</p>
+      </div>
+
+      <div class="product-detail">
+        <h3>About this item</h3>
+        <p>
+          {{product.description}}
+        </p>
+      </div>
+
+      <div class="purchase-info">
+        <input type="number" min="1" value="1">
+
+        <button class="btn">
+          Add to Cart
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</div>

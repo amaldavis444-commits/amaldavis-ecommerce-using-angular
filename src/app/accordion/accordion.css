@@ -1,0 +1,20 @@
+.accordion-box{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.accordion-item{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.accordion-button{
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: #f8f9fa;
+}
