@@ -12,10 +12,11 @@ export class Product {
   products: any[] = [];
 
   constructor(private apiService: ApiService,private cdr: ChangeDetectorRef) {}
-  ngOnInit(){
-    this.apiService.getProducts().subscribe((data: any) => {
-      this.products = data;
-      this.cdr.detectChanges();
+ ngOnInit() {
+    this.apiService.getProducts().subscribe((res: any) => {
+      console.log(res);
+      this.products = res.recipes; 
+      this.cdr.detectChanges(); 
     });
   }
 }

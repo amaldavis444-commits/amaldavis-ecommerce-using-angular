@@ -13,27 +13,16 @@
       <h2 class="product-title">{{product.title}}</h2>
 
       <div class="product-rating">
-        <h3> rating {{product.rating.rate}}  and  reviews {{product.rating.count}} </h3>
+        <h2> Ingredients </h2>
+        <h4>  {{product.ingredients}}  </h4>
       </div>
 
-      <div class="product-price">
-        <p class="new-price">${{product.price}}</p>
+      <div >
+        <h2> Instructions </h2>
+        <h4>{{product.instructions}}</h4>
       </div>
 
-      <div class="product-detail">
-        <h3>About this item</h3>
-        <p>
-          {{product.description}}
-        </p>
-      </div>
-
-      <div class="purchase-info">
-        <input type="number" min="1" value="1">
-
-        <button class="btn">
-          Add to Cart
-        </button>
-      </div>
+    
 
     </div>
 
